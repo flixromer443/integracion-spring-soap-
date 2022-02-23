@@ -1,0 +1,7 @@
+C:\Users\Felix\source\repos\soap3\Server\bin\Server.dll.config
+C:\Users\Felix\source\repos\soap3\Server\bin\Server.dll
+C:\Users\Felix\source\repos\soap3\Server\bin\Server.pdb
+C:\Users\Felix\source\repos\soap3\Server\obj\Debug\Server.csproj.CoreCompileInputs.cache
+C:\Users\Felix\source\repos\soap3\Server\obj\Debug\Server.dll
+C:\Users\Felix\source\repos\soap3\Server\obj\Debug\Server.pdb
+C:\Users\Felix\source\repos\soap3\Server\obj\Debug\Server.csproj.AssemblyReference.cache
