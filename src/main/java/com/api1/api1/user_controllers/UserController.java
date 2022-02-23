@@ -13,9 +13,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
+//import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestParam;
 
 @RestController
 @RequestMapping("/api1/v1")
@@ -39,14 +38,14 @@ public class UserController {
         return IUserJpa.save(user);
     }
 
-    @PutMapping("/users/{id}")
+    /*@PutMapping("/users/{id}")
     public User update(@RequestBody User user, @PathVariable Integer id) {
         User userbase = IUserJpa.getOne(id);
         userbase.setName(user.getName());
         userbase.setSurname(user.getSurname());
         return IUserJpa.save(userbase);
     }
-    
+    */
     @DeleteMapping("users/{id}")
     public void delete(@PathVariable Integer id) {
         IUserJpa.deleteById(id);

@@ -5,8 +5,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -29,10 +27,9 @@ public class Car {
     @Column(name = "domain",nullable = false)
     public String domain;
 
-    @ManyToOne
-    @JoinColumn(name = "owner_id")
-    User uid;
 
+    public Car(){
+    }
     public Car(int owner_id, String mark, String model, String domain) {
         this.owner_id = owner_id;
         this.mark = mark;

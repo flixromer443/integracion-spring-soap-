@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.PutMapping;
+//import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 
@@ -32,7 +32,7 @@ public class CarController implements ICarController {
     public Car create(@RequestBody Car car) {
         return ICarJpa.save(car);
     }
-    @PutMapping("/cars/{id}")
+    /*@PutMapping("/cars/{id}")
     public Car putMethodName(@RequestBody Car car,@PathVariable Integer id) {
         Car carbase=ICarJpa.getOne(id);
         carbase.setMark(car.getMark());
@@ -41,7 +41,7 @@ public class CarController implements ICarController {
         carbase.setDomain(car.getDomain());
         return ICarJpa.save(carbase);
     
-    }
+    }*/
     @DeleteMapping("/cars/{id}")
     public void delete(@PathVariable Integer id){
         ICarJpa.deleteById(id);
